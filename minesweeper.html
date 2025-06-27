@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="minesweeper.css">
+</head>
+<body>
+    <h1>Minesweeper</h1>
+
+    <div class="controls">
+        <button onclick="setDifficulty(10, 10)">Easy</button>
+        <button onclick="setDifficulty(25, 60)">Medium</button>
+        <button onclick="setDifficulty(35, 120)">Hard</button>
+        <button onclick="resetGame()">🔁 Reset</button>
+    </div>
+
+    <div id="message"></div>
+    <div id="game"></div>
+
+    <script src="minesweeper.js"></script>
+</body>
+</html>

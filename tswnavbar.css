@@ -1,0 +1,45 @@
+#tswcssbuttons {
+  width: 180px;
+  max-width: 100%;
+  text-align: center;
+}
+
+#tswcssbuttons ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: outside none none;
+}
+
+#tswcssbuttons li {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  list-style: outside none none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#tswcssbuttons li a {
+  color: black;
+  background-color: rgb(255, 178, 106);
+  border: 1px outset black;
+  text-decoration: none;
+  display: block;
+}
+
+#tswcssbuttons li a:hover {
+  color: black;
+  background-color: rgb(255, 122, 33);
+}
+
+#tswheader {
+  text-align: left;
+  font-size: x-large;
+}
+
+div {
+  color: black !important;
+}
+
+p {
+}
+

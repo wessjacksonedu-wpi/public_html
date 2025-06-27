@@ -1,0 +1,23 @@
+
+#home {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #ff9100;
+}
+
+#about {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #0011ff;
+}
+#projects {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #f700ff;
+}
+.redline {
+    border: 5px indigo;
+}
+.redline:hover{
+    border: 5px white;
+}
