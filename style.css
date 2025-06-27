@@ -21,3 +21,103 @@ meter, progress, output {
   transform: translateX(675px);
   color-scheme: linear-gradient();
 }
+/* General Page Styling */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* 🔥 Animated gradient background */
+  background: linear-gradient(270deg, #ff0000, #ff6600, #ffff00, #ff0000);
+  background-size: 600% 600%;
+  animation: warmGradient 20s ease infinite;
+}
+
+/* 🔁 Gradient animation keyframes */
+@keyframes warmGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+h1#title {
+  font-size: 3em;
+  color: #ff6600;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px #fff2e6;
+}
+
+/* Ensure full screen layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox container to fill vertical space */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffcc99;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Keep title styling */
+h1#title {
+  font-size: 3em;
+  color: #000000;
+  border: 40px;
+  margin: 40px 0 30px;
+  text-shadow: 2px 2px #fff2e6;
+}
+
+/* Button container fills the rest of the screen */
+.button-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+/* Game buttons styled attractively */
+.gameButton {
+  background: linear-gradient(to right, #ffa94d, #ff7f50);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 300px;
+  height: 60px;
+}
+
+.gameButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #ff8533, #ff6f00);
+}
+
+/* Thematic emojis */
+#wordFold::before       { content: "🧩 "; }
+#minesweeper::before    { content: "💣 "; }
+#flappybird::before     { content: "🐤 "; }
+#pong::before           { content: "🏓 "; }
+#snake::before          { content: "🐍 "; }
+#brickbreaker::before   { content: "🧱 "; }
+#pacman::before         { content: "🛸 "; }
+
